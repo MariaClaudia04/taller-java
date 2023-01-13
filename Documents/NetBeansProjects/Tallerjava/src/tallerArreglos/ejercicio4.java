@@ -17,7 +17,7 @@ public class ejercicio4 {
         int Columnas;
         int Contador;
         int Filas;
-        int Fin;
+        int Final;
         int Inicio;
         int Matriz[][];
         int pasos;
@@ -32,9 +32,9 @@ public class ejercicio4 {
         for (Filas = 0; Filas <= 3; Filas++) {
             for (Columnas = 0; Columnas <= 4; Columnas++) {
                 if ((Matriz[Filas][Columnas] < 10)) {
-                    System.out.print("0" + Matriz[Filas][Columnas] + " ");
+                    System.out.print("0"+Matriz[Filas][Columnas]+ " ");
                 } else {
-                    System.out.print(Matriz[Filas][Columnas] + " ");
+                    System.out.print(Matriz[Filas][Columnas]+ " ");
                 }
             }
             System.out.println("");
@@ -43,16 +43,16 @@ public class ejercicio4 {
         for (Filas = 0; Filas <= 3; Filas++) {
             if ((Filas % 2 == 0)) {
                 Inicio = 0;
-                Fin = 4;
+                Final = 4;
                 pasos = 1;
             } else {
                 Inicio = 4;
-                Fin = 0;
+                Final = 0;
                 pasos = -1;
             }
-            for (Columnas = Inicio; Columnas <= Fin; Columnas += pasos) {
+            for (Columnas = Inicio; Columnas <= Final; Columnas += pasos) {
                 if ((Matriz[Filas][Columnas] < 10)) {
-                    System.out.print("0" + Matriz[Filas][Columnas] + " ");
+                    System.out.print("0"+ Matriz[Filas][Columnas] + " ");
                 } else {
                     System.out.print(Matriz[Filas][Columnas] + " ");
                 }

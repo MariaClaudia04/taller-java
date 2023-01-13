@@ -45,7 +45,7 @@ public class ejercicio5 {
                 System.out.println("3: Cefaxilicina");
                 System.out.println("4: Loratadina");
                 int OpcionesProducto = Integer.parseInt(bufEntrada.readLine());
-
+                 
                 switch (OpcionesProducto) {
                     case 1:
                         System.out.println("Caracteristicas del producto:");

@@ -160,7 +160,7 @@ public class ejercicio6 {
                         System.out.println("Organizacion: " + Organizacion1);
 
                     }
-                    if (Eliminar == 1) {
+                    if (Eliminar == 2) {
                         System.out.println("Eliminar contacto 2");
                         Nombre1 = "";
                         System.out.println("Nombre: " + Nombre2);

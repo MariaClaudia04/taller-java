@@ -48,8 +48,8 @@ public class ejercicio4 {
                 System.out.println("Hombre Araña");
                 System.out.println("La cabaña maldita");
                 System.out.println("La asotea");
-                System.out.println("Lista de peliculas disponible");
                 break;
+                
             case 2:
                 System.out.println("Elija la pelicula a reservar:");
                 System.out.println("1: Baatma");

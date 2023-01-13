@@ -25,7 +25,8 @@ public class ejercicio8 {
         String NombreUsuario[];
         int Opciones = 0;
         int OpcionesMenu;
-        String Paso = "";
+       
+        int paso = 0;
         double ResultadoPrueba[];
         NombreUsuario = new String[8];
         CursoAprovado = new String[8];
@@ -41,18 +42,22 @@ public class ejercicio8 {
             OpcionesMenu = Integer.parseInt(bufEntrada.readLine());
             switch (OpcionesMenu) {
                 case 1:
-                    for (i = 0; i <= 8 - 1; i++) {
-                        System.out.println("Nombre Cliente: ");
+                {
+                    
+                    for (i = 0; i <= 8 - 1; i+=paso) {
+                        System.out.println("Nombre Cliente: "+i);
                         NombreUsuario[i] = bufEntrada.readLine();
                         NombreCurso[i] = "Conduccion Auto";
                         CursoAprovado[i] = "No";
                         i = i + 1;
                     }
+                }
 
                     break;
+
                 case 2:
-                    for (i = 0; i <= 8 - 1; i++) {
-                        System.out.println("Nombre Cliente ");
+                    for (i = 0; i <= 8 - 1; i+=paso) {
+                        System.out.println("Nombre Cliente "+i);
                         System.out.println(NombreUsuario[i]);
                         System.out.println("Ingresa la nota del curso ");
                         ResultadoPrueba[i] = Double.parseDouble(bufEntrada.readLine());
@@ -65,9 +70,9 @@ public class ejercicio8 {
                     }
                     break;
                 case 3:
-                    for (i = 0; i <= 7; i++) {
+                    for (i = 0; i <= 8 -1; i+=paso) {
                         if (!NombreUsuario[i].equals("")) {
-                            System.out.println("El cliente:");
+                            System.out.println("El cliente:"+i);
                             System.out.println(NombreUsuario[i]);
                             System.out.println("Tiene una nota de: " + ResultadoPrueba[i]);
                             System.out.println(CursoAprovado[i] + " aprobo el curso de " + NombreCurso[i]);
